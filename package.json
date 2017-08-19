@@ -1,0 +1,53 @@
+{
+  "name": "multipage-start-kit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development webpack-dashboard  babel-node build/webpack.config.dev.js",
+    "build": "cross-env NODE_ENV=production  webpack --config build/webpack.config.production.js --progress",
+    "server": "npm run build && babel-node bin/server "
+  },
+  "author": "HuaRongSAO",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "chalk": "^2.1.0",
+    "clean-webpack-plugin": "^0.1.16",
+    "cross-env": "^5.0.5",
+    "css-loader": "^0.28.4",
+    "ejs-render-loader": "^1.0.0",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "figures": "^2.0.0",
+    "file-loader": "^0.11.2",
+    "glob": "^7.1.2",
+    "html-loader": "^0.5.1",
+    "html-webpack-plugin": "^2.30.1",
+    "ip": "^1.1.5",
+    "node-sass": "^4.5.3",
+    "open-browser-webpack-plugin": "^0.0.5",
+    "pm2": "^2.6.1",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
+    "watch": "^1.0.2",
+    "webpack": "^3.5.3",
+    "webpack-dashboard": "^0.4.0",
+    "webpack-dev-server": "^2.7.1",
+    "webpack-hot-middleware": "^2.18.2"
+  },
+  "dependencies": {
+    "compression": "^1.7.0",
+    "express": "^4.15.4",
+    "lodash": "^4.17.4",
+    "object-assign": "^4.1.1",
+    "promise": "^8.0.1",
+    "whatwg-fetch": "^2.0.3"
+  }
+}

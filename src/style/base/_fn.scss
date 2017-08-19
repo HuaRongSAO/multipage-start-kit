@@ -1,0 +1,4 @@
+//计算rem 结合flex-lib
+@function rem($px) {
+  @return $px/750px*1rem;
+}

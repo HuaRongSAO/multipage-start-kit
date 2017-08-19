@@ -1,0 +1,56 @@
+//清除 浮动
+@mixin clearFix() {
+  *zoom: 1;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  &:before {
+    display: table;
+    clear: both;
+  }
+}
+
+
+//一行隐藏 ie兼容
+@mixin ellipsis($width) {
+  width: $width;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+//多行隐藏  仅支持现代浏览器 WebKit浏览器及移动端
+@mixin ellipsisWebKit($fontSize,$lineHeight,$lines) {
+  display: block;
+  display: -webkit-box;
+  height: $fontSize*$lineHeight*$lines;
+  margin: 0 auto;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+//将height设置为line-height的整数倍，防止超出的文字露出。
+//给:after添加渐变背景可避免文字只显示一半。
+@mixin ellipsisIE($lineHeight,$lines) {
+  position: relative;
+  line-height: $lineHeight;
+  max-height: $lineHeight*$lines;
+  overflow: hidden;
+  &:after {
+    content: "\02026"; // '...'
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-left: 40px;
+    background: -webkit-linear-gradient(left, transparent, #fff 55%);
+    background: -o-linear-gradient(right, transparent, #fff 55%);
+    background: -moz-linear-gradient(right, transparent, #fff 55%);
+    background: linear-gradient(to right, transparent, #fff 55%);
+  }
+}

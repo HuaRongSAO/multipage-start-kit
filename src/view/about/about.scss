@@ -1,0 +1,9 @@
+@import "./../../style/utill";
+
+body {
+  font-size: rem(20px);
+}
+
+p {
+  @include ellipsis('100px');
+}

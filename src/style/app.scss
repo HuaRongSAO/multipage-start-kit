@@ -1,0 +1,13 @@
+/**
+*公共css模块
+*   记得单页scss的引入
+*   @import "./../view/home/home";
+**/
+@import "base/color";
+@import "base/fn";
+@import "base/mixin";
+@import "base/reset";
+@import "base/base";
+//引入页面模块的scss
+@import "./../view/home/home";
+@import "./../view/about/about";
