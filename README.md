@@ -16,8 +16,6 @@
 - 组件化
 - 开发、调试和构建
 - 集成 PostCSS、Sass
-- JS 代码规范性校验
-- CSS 代码规范性校验
 
 ## Installation 安装
 
@@ -75,19 +73,6 @@ Sass 代码：
     &--active {
     }
     &--hover {
-    }
-  }
-}
-```
-基于 BEM mixin 的 Sass 代码：
-```scss
-@include b(nav) {
-  @include e(item) {
-    @include m(normal) {
-    }
-    @include m(active) {
-    }
-    @include m(hover) {
     }
   }
 }
