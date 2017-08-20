@@ -7,8 +7,6 @@ const {entries, html_plugins} = require('./tool/getFile')
 const NODE_ENV = process.env.NODE_ENV || 'development'
 
 const __DEV__ = NODE_ENV === 'development'
-const __TEST__ = NODE_ENV === 'test'
-const __PROD__ = NODE_ENV === 'production'
 
 let config = {
     entry: Object.assign(entries(PATH.VIEW), {
@@ -60,7 +58,7 @@ config.module.rules.push({
                 ],
             ],
             presets: [
-                ['babel-preset-env', {
+                ['babel-preset-env', {//自动es转义支持
                     modules: false,
                     // babel 转译成 ie9支持
                     targets: {
