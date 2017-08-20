@@ -1,20 +1,36 @@
 @import "./../../style/utill";
-
-.selector {
-  @include media("<=tablet") {
-    background-color: red;
-  }
-
-  @include media(">tablet", "<desktop") {
-    background-color: yellow;
-  }
-
-  @include media(">=desktop") {
-    background-color: green;
-  }
+body,html{
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-image: url("./../view/home/asset/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top center;
 }
 
-body {
-  background: salmon;
-  font-size: 12px;
+h1, .author {
+  color: #fff;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.nav {
+  padding: 0;
+  margin: 30px auto 0;
+  width: 300px;
+  &__item {
+    list-style: none;
+    padding: 15px;
+    &--link {
+      display: block;
+      width: 100%;
+      margin: auto;
+      color: #333;
+      text-align: center;
+    }
+  }
 }

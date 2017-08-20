@@ -116,6 +116,8 @@ $breakpoints: (phone: 320px, tablet: 768px, desktop: 1024px);
 ```
 
 # 目录结构
+```shell
+
 
 ├── bin  #服务器配置文件夹    
 │   └── server.js  #express #服务器实例配置     
@@ -172,3 +174,4 @@ $breakpoints: (phone: 320px, tablet: 768px, desktop: 1024px);
     ├── favicon.ico   
     └── readme.md   
 
+```
