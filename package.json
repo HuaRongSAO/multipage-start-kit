@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=development webpack-dashboard  babel-node build/webpack.config.dev.js",
+    "start": "clear && cross-env NODE_ENV=development webpack-dashboard  babel-node build/webpack.config.dev.js",
     "build": "cross-env NODE_ENV=production  webpack --config build/webpack.config.production.js --progress",
     "server": "npm run build && babel-node bin/server "
   },

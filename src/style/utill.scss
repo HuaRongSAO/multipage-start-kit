@@ -6,3 +6,21 @@
 @import "base/mixin";
 
 
+@import "~include-media/dist/_include-media.scss"; //响应式开发
+
+$breakpoints: (phone: 320px, tablet: 768px, desktop: 1024px);
+
+//.selector {
+//  @include media("<=tablet") {
+//    background-color: red;
+//  }
+//
+//  @include media(">tablet", "<desktop") {
+//    background-color: yellow;
+//  }
+//
+//  @include media(">=desktop") {
+//    background-color: green;
+//  }
+//}
+//

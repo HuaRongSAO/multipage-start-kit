@@ -1,3 +1,19 @@
+@import "./../../style/utill";
+
+.selector {
+  @include media("<=tablet") {
+    background-color: red;
+  }
+
+  @include media(">tablet", "<desktop") {
+    background-color: yellow;
+  }
+
+  @include media(">=desktop") {
+    background-color: green;
+  }
+}
+
 body {
   background: salmon;
 }
