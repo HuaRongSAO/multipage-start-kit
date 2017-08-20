@@ -1,7 +1,14 @@
-# multipage-start-kit
+# multipage-start-kit 
+  
+[![Build Status](https://travis-ci.org/alanshaw/david-www.svg?branch=master)](https://travis-ci.org/alanshaw/david-www)    
+
 基于 Webpack 开发和构建 传统多页面静态站点的前端工程化方案，支持
 同时适用于 PC 端和移动端。
 > 开发 PC 端网站时，如果需要兼容 IE8，请尽量少使用 CSS3，并且不使用 IE8 不能模拟的 ECMAScript 5 特性。
+
+## Requirements
+* node `^5.0.0`
+* yarn `^0.23.0` or npm `^3.0.0`
 
 ## 功能
 - 前端工程化
@@ -12,10 +19,6 @@
 - 集成 PostCSS、Sass
 - JS 代码规范性校验
 - CSS 代码规范性校验
-
-## Requirements
-* node `^5.0.0`
-* yarn `^0.23.0` or npm `^3.0.0`
 
 ## Installation 安装
 
