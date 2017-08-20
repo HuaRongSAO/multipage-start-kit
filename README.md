@@ -2,7 +2,7 @@
   
 [![Build Status](https://travis-ci.org/alanshaw/david-www.svg?branch=master)](https://travis-ci.org/alanshaw/david-www)    
 
-基于 Webpack 开发和构建 传统多页面静态站点的前端工程化方案，支持
+基于 Webpack 开发和构建 传统多页面静态站点的前端工程化方案，支持ie8+
 同时适用于 PC 端和移动端。
 
 ## Requirements
@@ -10,6 +10,8 @@
 * yarn `^0.23.0` or npm `^3.0.0`
 
 ## 功能
+- ES6语法支持
+- IE8兼容
 - 前端工程化
 - 支持响应式
 - 模块化
